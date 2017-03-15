@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010422331916}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010422331916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013718220864}
+  - 114: {fileID: 114000013383751546}
+  - 114: {fileID: 114000010139405690}
+  - 114: {fileID: 114000010527282056}
+  - 114: {fileID: 114000013400917688}
+  - 114: {fileID: 114000011782869784}
+  - 114: {fileID: 114000011076683406}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013718220864
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000010139405690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ad6dac07c91034d8fcfc8e8fb51fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standartTurretPrefab: {fileID: 1000010006343482, guid: 41441e32e1d33da428265f3d90fb07f1,
+    type: 2}
+  missileTurretPrefab: {fileID: 1000013272328634, guid: 74dc937afb2d9de4f9b1022f9241c3db,
+    type: 2}
+  buildEffect: {fileID: 1000010990563876, guid: 34aff9a268b41eb428adfa1f4783ff39,
+    type: 2}
+  sellEffect: {fileID: 1000013251318896, guid: a04a559332ed08c4eadae9c6c0ada997, type: 2}
+  tileUi: {fileID: 0}
+--- !u!114 &114000010527282056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43115a7b795f1544aa4532b32ca2ed00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingMoney: 500
+  startingLives: 1
+--- !u!114 &114000011076683406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7eb3dd90c2c70b49bbca8cb20b73d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 0}
+--- !u!114 &114000011782869784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e287d9571841d6d4883357db5c002e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoneyUi: {fileID: 0}
+  LivesUi: {fileID: 0}
+  CountdownUi: {fileID: 0}
+  GameOverUi: {fileID: 0}
+  CurrentWaveUi: {fileID: 0}
+--- !u!114 &114000013383751546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ffb7e1568cc5e42a1dce3d6ae6781b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waves:
+  - name: Enemies
+    Enemy:
+    - {fileID: 1000010430943096, guid: 4b6a0fdc2d1b03443b49affc09c5b4a4, type: 2}
+    - {fileID: 1000010430943096, guid: 7647d14afc0b5c74a9ef9afbef767eeb, type: 2}
+    count: 0a00000005000000
+    rate: 2
+  - name: Enemies
+    Enemy:
+    - {fileID: 1000010430943096, guid: 7647d14afc0b5c74a9ef9afbef767eeb, type: 2}
+    - {fileID: 1000010430943096, guid: 7647d14afc0b5c74a9ef9afbef767eeb, type: 2}
+    count: 0500000005000000
+    rate: 2
+  spawnLocation: {fileID: 0}
+  timeBetweenWaves: 10.5
+  initialCountdown: 5.5
+  waveIndex: 0
+  gameManager: {fileID: 114000013400917688}
+  enemiesToSpawn: []
+--- !u!114 &114000013400917688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010422331916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1a80d849833b943b5b9268549c5fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  victoryScreen: {fileID: 0}
+  levelToUnlock: 2

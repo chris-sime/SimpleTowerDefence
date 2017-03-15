@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8b02445e899a21f43a6bb40def5e4872
+timeCreated: 1486677476
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sahitya
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 290f7c60b62f5ed4281652597378f19b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
